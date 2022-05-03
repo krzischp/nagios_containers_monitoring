@@ -57,3 +57,5 @@ docker build -t custom-nagios-server ./nagios
 docker run -p 80:80 --rm --name nagios-server --network minharede custom-nagios-server
 ```
 
+# References
+[Pratica devops com docker para machine learning](https://aurimrv.gitbook.io/pratica-devops-com-docker-para-machine-learning/)(base) 
