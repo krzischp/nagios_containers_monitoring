@@ -1,3 +1,6 @@
+Before to start, you need to download the BERT model [here](https://drive.google.com/file/d/1d4RBMWwnzFBaPL2TSu-X1lfb3GLv1Pz5/view) and to save it in the following folder: `analise-sentimentos/assets`.
+
+
 # Building all containers
 
 
@@ -27,7 +30,7 @@ docker stop broker
 docker stop analise-sentimentos-consumer-container
 ```
 
-
+Then we can run them:
 ```bash
 docker run -d -p 8080:80 --network minharede --rm --name http-api-classificacao-produtos-container-unico-container http-api-classificacao-produtos-container-unico
 
@@ -58,4 +61,4 @@ docker run -p 80:80 --rm --name nagios-server --network minharede custom-nagios-
 ```
 
 # References
-[Pratica devops com docker para machine learning](https://aurimrv.gitbook.io/pratica-devops-com-docker-para-machine-learning/)(base) 
+[Pratica devops com docker para machine learning](https://aurimrv.gitbook.io/pratica-devops-com-docker-para-machine-learning/)
